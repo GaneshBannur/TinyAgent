@@ -1,3 +1,6 @@
+import sys
+sys.path.append('C:\\Users\\Bhavik Chandna\\Downloads\\ToolRAG_v2\\TinyAgent')
+
 if __name__=="__main__":
     from argparse import ArgumentParser
     import asyncio
@@ -13,6 +16,6 @@ if __name__=="__main__":
     tiny_agent = TinyAgentNoReplanning(tiny_agent_config)
 
     response = asyncio.run(
-        tiny_agent.arun(query="Create a meeting with Sid and Lutfi for tomorrow 2pm to discuss the meeting notes.")
+        tiny_agent.arun(query="Send a summary of the PDF document \"BusinessProposal.pdf\" to Alex and Sarah, then create a new note titled \"Lesson Calendar\" in the \"Work\" folder with the list points.")
         )
     print(response)

@@ -1,0 +1,2 @@
+input,tool_outputsSend a summary of the Annual Report.pdf via SMS to the management team and add key points to the existing note Financial Updates in the Business folder,"{'open_and_get_file_path': ['Annual Report.pdf'], 'summarize_pdf': ['$1'], 'get_phone_number': ['management team'], 'append_note_content': ['Financial Updates', '$2', 'Business'], 'send_sms': [['$3'], '$2'], 'join': []}"
+Compose a new email to John.Doe@gmail.com and Jane.Smith@hotmail.com with the subject Rally Timetable and attach the file Rally_Timetable.docx,{}
